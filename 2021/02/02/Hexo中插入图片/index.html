@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>azuo | Hexo</title>
+  <title>Hexo中插入图片 | Hexo</title>
   <meta name="author" content="John Doe" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,17 +13,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="hexo, 编码" />
   
-  <meta property="og:type" content="article">
-<meta property="og:title" content="azuo">
-<meta property="og:url" content="http://example.com/2021/01/20/azuo/index.html">
+  <meta name="description" content="1、在项目的根目录下载图像插入插件： 1npm install hexo-asset-image --save 2、打开hexo的配置文件_config.yml，找到post_asset_folder，把选项从false改成true3、打开文件 1&#x2F;node_modules&#x2F;hexo-asset-image&#x2F;index.js 更新文件内代码以下：（在此感谢Ericam_ 大神） 123456789">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo中插入图片">
+<meta property="og:url" content="http://example.com/2021/02/02/Hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1、在项目的根目录下载图像插入插件： 1npm install hexo-asset-image --save 2、打开hexo的配置文件_config.yml，找到post_asset_folder，把选项从false改成true3、打开文件 1&#x2F;node_modules&#x2F;hexo-asset-image&#x2F;index.js 更新文件内代码以下：（在此感谢Ericam_ 大神） 123456789">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/null">
-<meta property="article:published_time" content="2021-01-20T07:42:07.000Z">
-<meta property="article:modified_time" content="2021-01-20T07:42:07.262Z">
+<meta property="article:published_time" content="2021-02-02T09:47:25.000Z">
+<meta property="article:modified_time" content="2021-02-02T10:09:51.053Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="编码">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/null">
 <meta name="twitter:site" content="@Candiinya">
@@ -129,17 +133,17 @@
     <article>
         <div class="kratos-hentry kratos-post-inner clearfix">
             <header class="kratos-entry-header">
-                <h1 class="kratos-entry-title text-center">azuo</h1>
+                <h1 class="kratos-entry-title text-center">Hexo中插入图片</h1>
                 
                 <div class="kratos-post-meta text-center">
                     <span>
-                        <i class="fa fa-calendar"></i> 2021-01-20
+                        <i class="fa fa-calendar"></i> 2021-02-02
                         <i class="fa fa-folder"></i> 分类 
                         <i class="fa fa-user"></i> 作者 John Doe
                         <i class="fa fa-edit"></i> 
                         
                         
-                            0
+                            ~3.17K
                         
                         字
                         
@@ -148,11 +152,25 @@
             </header>
             <div class="kratos-post-content">
                 <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                    本文最后编辑于 <time datetime="1611128527262"></time> 前，其中的内容可能需要更新。
+                    本文最后编辑于 <time datetime="1612260591053"></time> 前，其中的内容可能需要更新。
                 </div>
                 
                 <hr />
-                
+                <p>1、在项目的根目录下载图像插入插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<p>2、打开hexo的配置文件_config.yml，找到post_asset_folder，把选项从false改成true<br>3、打开文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/node_modules/hexo-asset-image/index.js</span><br></pre></td></tr></table></figure>
+<p>更新文件内代码以下：<br>（在此感谢<a target="_blank" rel="noopener" href="https://blog.csdn.net/xjm850552586">Ericam_ 大神</a>）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;use strict&#x27;</span>;</span><br><span class="line">var cheerio = require(<span class="string">&#x27;cheerio&#x27;</span>);</span><br><span class="line"></span><br><span class="line">// http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string</span><br><span class="line"><span class="keyword">function</span> getPosition(str, m, i) &#123;</span><br><span class="line">  <span class="built_in">return</span> str.split(m, i).join(m).length;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var version = String(hexo.version).split(<span class="string">&#x27;.&#x27;</span>);</span><br><span class="line">hexo.extend.filter.register(<span class="string">&#x27;after_post_render&#x27;</span>, <span class="keyword">function</span>(data)&#123;</span><br><span class="line">  var config = hexo.config;</span><br><span class="line">  <span class="keyword">if</span>(config.post_asset_folder)&#123;</span><br><span class="line">        var link = data.permalink;</span><br><span class="line">    <span class="keyword">if</span>(version.length &gt; 0 &amp;&amp; Number(version[0]) == 3)</span><br><span class="line">       var beginPos = getPosition(link, <span class="string">&#x27;/&#x27;</span>, 1) + 1;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">       var beginPos = getPosition(link, <span class="string">&#x27;/&#x27;</span>, 3) + 1;</span><br><span class="line">    // In hexo 3.1.1, the permalink of <span class="string">&quot;about&quot;</span> page is like <span class="string">&quot;.../about/index.html&quot;</span>.</span><br><span class="line">    var endPos = link.lastIndexOf(<span class="string">&#x27;/&#x27;</span>) + 1;</span><br><span class="line">    link = link.substring(beginPos, endPos);</span><br><span class="line"></span><br><span class="line">    var toprocess = [<span class="string">&#x27;excerpt&#x27;</span>, <span class="string">&#x27;more&#x27;</span>, <span class="string">&#x27;content&#x27;</span>];</span><br><span class="line">    <span class="keyword">for</span>(var i = 0; i &lt; toprocess.length; i++)&#123;</span><br><span class="line">      var key = toprocess[i];</span><br><span class="line"> </span><br><span class="line">      var $ = cheerio.load(data[key], &#123;</span><br><span class="line">        ignoreWhitespace: <span class="literal">false</span>,</span><br><span class="line">        xmlMode: <span class="literal">false</span>,</span><br><span class="line">        lowerCaseTags: <span class="literal">false</span>,</span><br><span class="line">        decodeEntities: <span class="literal">false</span></span><br><span class="line">      &#125;);</span><br><span class="line"></span><br><span class="line">      $(<span class="string">&#x27;img&#x27;</span>).each(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        <span class="keyword">if</span> ($(this).attr(<span class="string">&#x27;src&#x27;</span>))&#123;</span><br><span class="line">            // For windows style path, we replace <span class="string">&#x27;\&#x27;</span> to <span class="string">&#x27;/&#x27;</span>.</span><br><span class="line">            var src = $(this).attr(<span class="string">&#x27;src&#x27;</span>).replace(<span class="string">&#x27;\\&#x27;</span>, <span class="string">&#x27;/&#x27;</span>);</span><br><span class="line">            <span class="keyword">if</span>(!/http[s]*.*|\/\/.*/.<span class="built_in">test</span>(src) &amp;&amp;</span><br><span class="line">               !/^\s*\//.<span class="built_in">test</span>(src)) &#123;</span><br><span class="line">              // For <span class="string">&quot;about&quot;</span> page, the first part of <span class="string">&quot;src&quot;</span> can<span class="string">&#x27;t be removed.</span></span><br><span class="line"><span class="string">              // In addition, to support multi-level local directory.</span></span><br><span class="line"><span class="string">              var linkArray = link.split(&#x27;</span>/<span class="string">&#x27;).filter(function(elem)&#123;</span></span><br><span class="line"><span class="string">                return elem != &#x27;</span><span class="string">&#x27;;</span></span><br><span class="line"><span class="string">              &#125;);</span></span><br><span class="line"><span class="string">              var srcArray = src.split(&#x27;</span>/<span class="string">&#x27;).filter(function(elem)&#123;</span></span><br><span class="line"><span class="string">                return elem != &#x27;</span><span class="string">&#x27; &amp;&amp; elem != &#x27;</span>.<span class="string">&#x27;;</span></span><br><span class="line"><span class="string">              &#125;);</span></span><br><span class="line"><span class="string">              if(srcArray.length &gt; 1)</span></span><br><span class="line"><span class="string">                srcArray.shift();</span></span><br><span class="line"><span class="string">              src = srcArray.join(&#x27;</span>/<span class="string">&#x27;);</span></span><br><span class="line"><span class="string">              $(this).attr(&#x27;</span>src<span class="string">&#x27;, config.root + link + src);</span></span><br><span class="line"><span class="string">              console.info&amp;&amp;console.info(&quot;update link as:--&gt;&quot;+config.root + link + src);</span></span><br><span class="line"><span class="string">            &#125;</span></span><br><span class="line"><span class="string">        &#125;else&#123;</span></span><br><span class="line"><span class="string">            console.info&amp;&amp;console.info(&quot;no src attr, skipped...&quot;);</span></span><br><span class="line"><span class="string">            console.info&amp;&amp;console.info($(this));</span></span><br><span class="line"><span class="string">        &#125;</span></span><br><span class="line"><span class="string">      &#125;);</span></span><br><span class="line"><span class="string">      data[key] = $.html();</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">&#125;);</span></span><br></pre></td></tr></table></figure>
+<p>4、新建hexo文档</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="built_in">test</span></span><br></pre></td></tr></table></figure>
+<p>会在source/_posts生成test.md文件和test文件夹，我们把需要插入的图片复制到test文件夹中，在test.md进行编译即可。编译规范如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![文字](图片名称)</span><br></pre></td></tr></table></figure>
+<p>其中的文字内容为图像下方显示信息，可留空白，图片名称对应使用图片的名称.后缀名。<br>使用例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![仙贝](xianbei.gif)</span><br></pre></td></tr></table></figure>
+<p><img src="/2021/02/02/Hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/xianbei.gif" alt="仙贝"></p>
+<p>文章转自：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/f72aaad7b852%EF%BC%8C">https://www.jianshu.com/p/f72aaad7b852，</a><br>感谢大佬分享</p>
+
             </div>
             
                 <div class="kratos-copyright text-center clearfix">
@@ -205,7 +223,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2021/01/20/azuo/",
+                text: "http://example.com/2021/02/02/Hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -217,9 +235,11 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2021/01/20/azuo/";
-            const title         = "「azuo」";
-            const excerpt       = ``;
+            const hostUrl       = "http://example.com/2021/02/02/Hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/";
+            const title         = "「Hexo中插入图片」";
+            const excerpt       = `1、在项目的根目录下载图像插入插件：
+1npm install hexo-asset-image --save
+2、打开hexo的配置文件_config.yml，找到post_asset_folder，把选项从false改成true3...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -238,10 +258,10 @@
                 <div class="footer-tag clearfix">
                     <div class="pull-left">
                     <i class="fa fa-tags"></i>
-                        
+                        <a class="tag-none-link" href="/tags/hexo/" rel="tag">hexo</a>, <a class="tag-none-link" href="/tags/%E7%BC%96%E7%A0%81/" rel="tag">编码</a>
                     </div>
                     <div class="pull-date">
-                    <span>最后编辑：2021-01-20</span>
+                    <span>最后编辑：2021-02-02</span>
                     </div>
                 </div>
             </footer>
@@ -249,10 +269,10 @@
         
             <nav class="navigation post-navigation clearfix" role="navigation">
                 
-                
-                <div class="nav-next clearfix">
-                    <a title=" Hello World" href="/2021/01/20/hello-world/">下一篇 &gt;</a>
+                <div class="nav-previous clearfix">
+                    <a title=" The new world" href="/2021/02/02/The-new-world/">&lt; 上一篇</a>
                 </div>
+                
                 
             </nav>
         
@@ -284,6 +304,13 @@
 
                 
                     
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/hexo/" style="font-size: 0.8em;">hexo</a> <a href="/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/" style="font-size: 0.6em;">第一次</a> <a href="/tags/%E7%BC%96%E7%A0%81/" style="font-size: 0.8em;">编码</a>
+      </div>
+  </aside>
+
                 
                     
   <aside id="krw-posts" class="widget widget-kratos-poststab">
@@ -294,13 +321,13 @@
         
           
           
-            <a class="list-group-item" href="/2021/01/20/hello-world/"><i class="fa  fa-book"></i> Hello World</a>
+            <a class="list-group-item" href="/2021/02/02/Hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"><i class="fa  fa-book"></i> Hexo中插入图片</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2021/01/20/azuo/"><i class="fa  fa-book"></i> azuo</a>
+            <a class="list-group-item" href="/2021/02/02/The-new-world/"><i class="fa  fa-book"></i> The new world</a>
             
           
         

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-20T07:49:36.791Z</updated>
+  <updated>2021-02-02T10:09:51.053Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,37 +17,49 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2021/01/20/hello-world/"/>
-    <id>http://example.com/2021/01/20/hello-world/</id>
-    <published>2021-01-20T07:49:36.791Z</published>
-    <updated>2021-01-20T07:49:36.791Z</updated>
+    <title>Hexo中插入图片</title>
+    <link href="http://example.com/2021/02/02/Hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"/>
+    <id>http://example.com/2021/02/02/Hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</id>
+    <published>2021-02-02T09:47:25.000Z</published>
+    <updated>2021-02-02T10:09:51.053Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;哈哈哈哈.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3</summary>
+    <summary type="html">&lt;p&gt;1、在项目的根目录下载图像插入插件：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</summary>
         
       
     
     
     
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="编码" scheme="http://example.com/tags/%E7%BC%96%E7%A0%81/"/>
     
   </entry>
   
   <entry>
-    <title>azuo</title>
-    <link href="http://example.com/2021/01/20/azuo/"/>
-    <id>http://example.com/2021/01/20/azuo/</id>
-    <published>2021-01-20T07:42:07.000Z</published>
-    <updated>2021-01-20T07:42:07.262Z</updated>
+    <title>The new world</title>
+    <link href="http://example.com/2021/02/02/The-new-world/"/>
+    <id>http://example.com/2021/02/02/The-new-world/</id>
+    <published>2021-02-02T03:36:47.000Z</published>
+    <updated>2021-02-02T10:09:51.142Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;完成了，正如本文标题一样，这是当前涉世未深的我第一次进行尝试制作个人博客。虽在尝试之处有万分感慨，但在结束之后，也随即化为欣喜，再随后就索然无味。我自认为已经擎山峰之巅，但是回首望，在最初尝试进行搭建时，也碰壁多次。不由得心生感慨，碌碌为人，我的人生何尝也不是碰壁蹴就，但是我们还是需要在碰壁时直面自己，虽然我有一个极大的性格缺陷“懒惰”，在碰壁时因为这个问题，或许就会很容易的轻言放弃，为此我也在漫漫的人生长路上，吃亏多次，当然我亦无悔改之意。既然没有悔改的打算，那就如此就好。&lt;br&gt;话虽如此，本博客的主要意图就是记录生活，以及整理自己的一些琐事。避免错误再返二遍，有些事情在进行第二次时可以顺利完成，这就是我的初衷。好了好了，还有一个缺点就是说东西的时候白文太多，不过毕竟是个人博客，怎么样都好啦。&lt;br&gt;其实博客搭建好久之前就已经结束了，但是因为近期工作比较忙，所有没有时间对这个博客进行维护。今天终于可以有时间，我会对这个博客的基本编写方法进行展示，以便后续编写时可以使用响应模块的编写代码。&lt;/p&gt;</summary>
     
     
     
     
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="编码" scheme="http://example.com/tags/%E7%BC%96%E7%A0%81/"/>
+    
+    <category term="第一次" scheme="http://example.com/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/"/>
     
   </entry>
   
