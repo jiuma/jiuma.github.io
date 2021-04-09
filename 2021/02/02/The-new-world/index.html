@@ -24,7 +24,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/null">
 <meta property="article:published_time" content="2021-02-02T03:36:47.000Z">
-<meta property="article:modified_time" content="2021-02-02T10:09:51.142Z">
+<meta property="article:modified_time" content="2021-04-09T07:40:02.434Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="编码">
@@ -144,7 +144,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~3.06K
+                            ~4.30K
                         
                         字
                         
@@ -153,7 +153,7 @@
             </header>
             <div class="kratos-post-content">
                 <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                    本文最后编辑于 <time datetime="1612260591142"></time> 前，其中的内容可能需要更新。
+                    本文最后编辑于 <time datetime="1617954002434"></time> 前，其中的内容可能需要更新。
                 </div>
                 
                 <hr />
@@ -174,15 +174,46 @@
     </div>
     </div>
 
-<h3 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h3><p>代码框是程序类代码必备的组件，单独分段、复制按钮、特殊显示，在需要进行代码输入时，可以明确地告诉你“我是代码，请输入我”，长篇直接使用复制按钮，单行鼠标三击，可谓是非常的方便。代码格式如下：</p>
-<blockquote class="pullquote [class]"><p><img src="/2021/02/02/The-new-world/bash.jpg"></p>
-</blockquote>
-<p>使用例：</p>
-<div class="panel panel-warning">
-    <div class="panel-title">代码框</div>
+
+<h3 id="字体选项"><a href="#字体选项" class="headerlink" title="字体选项"></a>字体选项</h3><p>字体选项就是给一些字体增加一点点属性，这些属性可以让这些字体看起来更加。。。花里胡哨？总之在你写文章时，需要重点显示某些内容，比如说<span style="color:white;background:black;font-size:30px;font-family:仿宋;">这样</span>，或者<span style="color:red">这样</span>，以及<b>这样</b>、<b><span style>这样</span>、<span style="color:rgb(255, 0, 255)">这样</span></b>，总之在写一些描述文的时候，真的非常<span style>好用</span>！</p>
+<p>字体模块教程参考了其他大佬的文章，也是非常详细的文章，地址如下<a target="_blank" rel="noopener" href="https://oldgerman.github.io/6c57f882/">OldGerman’s Blog</a>。如果原作者找我大概就删了。。。</p>
+<div class="panel panel-info">
+    <div class="panel-title">字体</div>
     <div class="panel-body">
-        <p>代码：<br><img src="/2021/02/02/The-new-world/bash2.jpg"><br>实际演示：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">随便写</span><br><span class="line">可以分行</span><br></pre></td></tr></table></figure>
+        <p>代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span style=<span class="string">&#x27;color:文字颜色;background:背景颜色;font-size:文字大小;font-family:字体;&#x27;</span>&gt;文字&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<p>其实懂得一看就明白了，这不就是web页面的语言吗！恭喜你，这段可以跳了，不过毕竟我的博客是面向全年龄的，目的是让我这样的丈育儿童一看就知道，这些东西到底怎么用，所以这段我也会着重描写一下！（毕竟我自己会忘，丈育儿童竟是我自己）</p>
+<p><b>1、三种颜色示例：</b></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span style=<span class="string">&quot;color:red;&quot;</span>&gt;红不红？&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<p><span style="color:red;">红不红？</span></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span style=<span class="string">&quot;color:rgb(255, 0, 0);&quot;</span>&gt;红不红？&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<p><span style="color:rgb(255, 0, 0);">红不红？</span></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span style=<span class="string">&quot;color:#FF0000;&quot;</span>&gt;红不红？&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<p><span style="color:#FF0000;">红不红？</span></p>
+<p><b>2、黑底白字仿宋50px：</b></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span style&#x3D;&#39;color:white;background:black;font-size:50px;font-family:仿宋;&#39;&gt;黑白配&lt;&#x2F;span&gt;</span><br></pre></td></tr></table></figure>
+<p><span style="color:white;background:black;font-size:50px;font-family:仿宋;">黑白配</span></p>
+<p><b>3、加粗两种方法：</b></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;b&gt;加粗&lt;&#x2F;b&gt;</span><br></pre></td></tr></table></figure>
+<p><b>加粗</b></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;strong&gt;我被Strong标签加粗&lt;&#x2F;strong&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>我被Strong标签加粗</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;b&gt;&lt;span style&#x3D;&quot;color:rgb(255, 0, 255);&quot;&gt;有颜色的加粗&lt;&#x2F;span&gt;&lt;&#x2F;b&gt;</span><br></pre></td></tr></table></figure>
+<p><b><span style="color:rgb(255, 0, 255);">有颜色的加粗</span></b></p>
+<p><b>4、sup &amp; sub | 上标 &amp; 下标：</b></p>
+<p>sup为上标，可以让参数靠上显示，sub为下标，可以让参数靠下显示，相对的，这些被引用到其他地方的参数也会缩小</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">平方mm&lt;sup&gt;2&lt;&#x2F;sup&gt;</span><br></pre></td></tr></table></figure>
+<p>平方mm<sup>2</sup></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">y &#x3D; log&lt;sub&gt;2 &lt;&#x2F;sub&gt;x</span><br></pre></td></tr></table></figure>
+<p>y = log<sub>2 </sub>x</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">----&lt;sub&gt;----&lt;&#x2F;sub&gt;----&lt;sup&gt;----&lt;&#x2F;sup&gt;</span><br></pre></td></tr></table></figure>
+<p>—-<sub>—-</sub>—-<sup>—-</sup></p>
+<p><b>5、对齐</b></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div align&#x3D;&quot;center&quot;&gt;居中对齐！&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+<div align="center">居中对齐！</div>
+
+<p>参数：left 左对齐；right 右对齐；center 居中；justify 增加行间隔</p>
+
     </div>
     </div>
 
@@ -408,7 +439,7 @@
                         <a class="tag-none-link" href="/tags/hexo/" rel="tag">hexo</a>, <a class="tag-none-link" href="/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/" rel="tag">第一次</a>, <a class="tag-none-link" href="/tags/%E7%BC%96%E7%A0%81/" rel="tag">编码</a>
                     </div>
                     <div class="pull-date">
-                    <span>最后编辑：2021-02-02</span>
+                    <span>最后编辑：2021-04-09</span>
                     </div>
                 </div>
             </footer>
@@ -454,7 +485,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/hexo/" style="font-size: 0.8em;">hexo</a> <a href="/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/" style="font-size: 0.6em;">第一次</a> <a href="/tags/%E7%BC%96%E7%A0%81/" style="font-size: 0.8em;">编码</a>
+        <a href="/tags/Linux/" style="font-size: 0.6em;">Linux</a> <a href="/tags/hexo/" style="font-size: 0.8em;">hexo</a> <a href="/tags/%E5%91%BD%E4%BB%A4/" style="font-size: 0.6em;">命令</a> <a href="/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/" style="font-size: 0.6em;">第一次</a> <a href="/tags/%E7%BC%96%E7%A0%81/" style="font-size: 0.8em;">编码</a>
       </div>
   </aside>
 
@@ -465,6 +496,12 @@
   <div class="tab-content">
       <ul class="list-group">
         
+        
+          
+          
+            <a class="list-group-item" href="/2021/03/16/Linux%E4%B8%AD%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E6%96%B9%E6%B3%95/"><i class="fa  fa-book"></i> Linux打包文件夹的方法</a>
+            
+          
         
           
           

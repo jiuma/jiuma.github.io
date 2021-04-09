@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>Hexo中插入图片 | Hexo</title>
+  <title>Linux打包文件夹的方法 | Hexo</title>
   <meta name="author" content="John Doe" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,21 +13,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="hexo, 编码" />
+    <meta name="keywords" content="Linux, 命令" />
   
-  <meta name="description" content="1、在项目的根目录下载图像插入插件： 1npm install hexo-asset-image --save 2、打开hexo的配置文件_config.yml，找到post_asset_folder，把选项从false改成true3、打开文件 1&#x2F;node_modules&#x2F;hexo-asset-image&#x2F;index.js 更新文件内代码以下：（在此感谢Ericam_ 大神） 123456789">
+  <meta name="description" content="前段时间，因为Vultr跑路（说不上跑路，实际上就是我的机房被墙了），导致我之前在上面顺便部署的东西全部木大！虽然后来又重新部署到了我的阿里云里，但是不得不说重新部署一遍真的是非常麻烦。于是乎，我就打算将部署在服务器中的部分程序，打包一下方便之后使用。但是毕竟我是Linux苦手，在网上找打包命令的时候，基本上全部的命令，我都看不懂（，真不是我蠢啊，那东西一堆就网上乱扔，一点格式都没有，我能咋办嘛。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo中插入图片">
-<meta property="og:url" content="http://example.com/2021/02/02/Hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/index.html">
+<meta property="og:title" content="Linux打包文件夹的方法">
+<meta property="og:url" content="http://example.com/2021/03/16/Linux%E4%B8%AD%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1、在项目的根目录下载图像插入插件： 1npm install hexo-asset-image --save 2、打开hexo的配置文件_config.yml，找到post_asset_folder，把选项从false改成true3、打开文件 1&#x2F;node_modules&#x2F;hexo-asset-image&#x2F;index.js 更新文件内代码以下：（在此感谢Ericam_ 大神） 123456789">
+<meta property="og:description" content="前段时间，因为Vultr跑路（说不上跑路，实际上就是我的机房被墙了），导致我之前在上面顺便部署的东西全部木大！虽然后来又重新部署到了我的阿里云里，但是不得不说重新部署一遍真的是非常麻烦。于是乎，我就打算将部署在服务器中的部分程序，打包一下方便之后使用。但是毕竟我是Linux苦手，在网上找打包命令的时候，基本上全部的命令，我都看不懂（，真不是我蠢啊，那东西一堆就网上乱扔，一点格式都没有，我能咋办嘛。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/null">
-<meta property="article:published_time" content="2021-02-02T09:47:25.000Z">
-<meta property="article:modified_time" content="2021-02-02T10:09:51.053Z">
+<meta property="article:published_time" content="2021-03-15T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-04-09T07:39:55.467Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="hexo">
-<meta property="article:tag" content="编码">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="命令">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/null">
 <meta name="twitter:site" content="@Candiinya">
@@ -133,17 +133,17 @@
     <article>
         <div class="kratos-hentry kratos-post-inner clearfix">
             <header class="kratos-entry-header">
-                <h1 class="kratos-entry-title text-center">Hexo中插入图片</h1>
+                <h1 class="kratos-entry-title text-center">Linux打包文件夹的方法</h1>
                 
                 <div class="kratos-post-meta text-center">
                     <span>
-                        <i class="fa fa-calendar"></i> 2021-02-02
+                        <i class="fa fa-calendar"></i> 2021-03-16
                         <i class="fa fa-folder"></i> 分类 
                         <i class="fa fa-user"></i> 作者 John Doe
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~3.17K
+                            ~2.03K
                         
                         字
                         
@@ -152,25 +152,71 @@
             </header>
             <div class="kratos-post-content">
                 <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                    本文最后编辑于 <time datetime="1612260591053"></time> 前，其中的内容可能需要更新。
+                    本文最后编辑于 <time datetime="1617953995467"></time> 前，其中的内容可能需要更新。
                 </div>
                 
                 <hr />
-                <p>1、在项目的根目录下载图像插入插件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
-<p>2、打开hexo的配置文件_config.yml，找到post_asset_folder，把选项从false改成true<br>3、打开文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/node_modules/hexo-asset-image/index.js</span><br></pre></td></tr></table></figure>
-<p>更新文件内代码以下：<br>（在此感谢<a target="_blank" rel="noopener" href="https://blog.csdn.net/xjm850552586">Ericam_ 大神</a>）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;use strict&#x27;</span>;</span><br><span class="line">var cheerio = require(<span class="string">&#x27;cheerio&#x27;</span>);</span><br><span class="line"></span><br><span class="line">// http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string</span><br><span class="line"><span class="keyword">function</span> getPosition(str, m, i) &#123;</span><br><span class="line">  <span class="built_in">return</span> str.split(m, i).join(m).length;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var version = String(hexo.version).split(<span class="string">&#x27;.&#x27;</span>);</span><br><span class="line">hexo.extend.filter.register(<span class="string">&#x27;after_post_render&#x27;</span>, <span class="keyword">function</span>(data)&#123;</span><br><span class="line">  var config = hexo.config;</span><br><span class="line">  <span class="keyword">if</span>(config.post_asset_folder)&#123;</span><br><span class="line">        var link = data.permalink;</span><br><span class="line">    <span class="keyword">if</span>(version.length &gt; 0 &amp;&amp; Number(version[0]) == 3)</span><br><span class="line">       var beginPos = getPosition(link, <span class="string">&#x27;/&#x27;</span>, 1) + 1;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">       var beginPos = getPosition(link, <span class="string">&#x27;/&#x27;</span>, 3) + 1;</span><br><span class="line">    // In hexo 3.1.1, the permalink of <span class="string">&quot;about&quot;</span> page is like <span class="string">&quot;.../about/index.html&quot;</span>.</span><br><span class="line">    var endPos = link.lastIndexOf(<span class="string">&#x27;/&#x27;</span>) + 1;</span><br><span class="line">    link = link.substring(beginPos, endPos);</span><br><span class="line"></span><br><span class="line">    var toprocess = [<span class="string">&#x27;excerpt&#x27;</span>, <span class="string">&#x27;more&#x27;</span>, <span class="string">&#x27;content&#x27;</span>];</span><br><span class="line">    <span class="keyword">for</span>(var i = 0; i &lt; toprocess.length; i++)&#123;</span><br><span class="line">      var key = toprocess[i];</span><br><span class="line"> </span><br><span class="line">      var $ = cheerio.load(data[key], &#123;</span><br><span class="line">        ignoreWhitespace: <span class="literal">false</span>,</span><br><span class="line">        xmlMode: <span class="literal">false</span>,</span><br><span class="line">        lowerCaseTags: <span class="literal">false</span>,</span><br><span class="line">        decodeEntities: <span class="literal">false</span></span><br><span class="line">      &#125;);</span><br><span class="line"></span><br><span class="line">      $(<span class="string">&#x27;img&#x27;</span>).each(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        <span class="keyword">if</span> ($(this).attr(<span class="string">&#x27;src&#x27;</span>))&#123;</span><br><span class="line">            // For windows style path, we replace <span class="string">&#x27;\&#x27;</span> to <span class="string">&#x27;/&#x27;</span>.</span><br><span class="line">            var src = $(this).attr(<span class="string">&#x27;src&#x27;</span>).replace(<span class="string">&#x27;\\&#x27;</span>, <span class="string">&#x27;/&#x27;</span>);</span><br><span class="line">            <span class="keyword">if</span>(!/http[s]*.*|\/\/.*/.<span class="built_in">test</span>(src) &amp;&amp;</span><br><span class="line">               !/^\s*\//.<span class="built_in">test</span>(src)) &#123;</span><br><span class="line">              // For <span class="string">&quot;about&quot;</span> page, the first part of <span class="string">&quot;src&quot;</span> can<span class="string">&#x27;t be removed.</span></span><br><span class="line"><span class="string">              // In addition, to support multi-level local directory.</span></span><br><span class="line"><span class="string">              var linkArray = link.split(&#x27;</span>/<span class="string">&#x27;).filter(function(elem)&#123;</span></span><br><span class="line"><span class="string">                return elem != &#x27;</span><span class="string">&#x27;;</span></span><br><span class="line"><span class="string">              &#125;);</span></span><br><span class="line"><span class="string">              var srcArray = src.split(&#x27;</span>/<span class="string">&#x27;).filter(function(elem)&#123;</span></span><br><span class="line"><span class="string">                return elem != &#x27;</span><span class="string">&#x27; &amp;&amp; elem != &#x27;</span>.<span class="string">&#x27;;</span></span><br><span class="line"><span class="string">              &#125;);</span></span><br><span class="line"><span class="string">              if(srcArray.length &gt; 1)</span></span><br><span class="line"><span class="string">                srcArray.shift();</span></span><br><span class="line"><span class="string">              src = srcArray.join(&#x27;</span>/<span class="string">&#x27;);</span></span><br><span class="line"><span class="string">              $(this).attr(&#x27;</span>src<span class="string">&#x27;, config.root + link + src);</span></span><br><span class="line"><span class="string">              console.info&amp;&amp;console.info(&quot;update link as:--&gt;&quot;+config.root + link + src);</span></span><br><span class="line"><span class="string">            &#125;</span></span><br><span class="line"><span class="string">        &#125;else&#123;</span></span><br><span class="line"><span class="string">            console.info&amp;&amp;console.info(&quot;no src attr, skipped...&quot;);</span></span><br><span class="line"><span class="string">            console.info&amp;&amp;console.info($(this));</span></span><br><span class="line"><span class="string">        &#125;</span></span><br><span class="line"><span class="string">      &#125;);</span></span><br><span class="line"><span class="string">      data[key] = $.html();</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">&#125;);</span></span><br></pre></td></tr></table></figure>
-<p>4、新建hexo文档</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="built_in">test</span></span><br></pre></td></tr></table></figure>
-<p>会在source/_posts生成test.md文件和test文件夹，我们把需要插入的图片复制到test文件夹中，在test.md进行编译即可。编译规范如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![文字](图片名称)</span><br></pre></td></tr></table></figure>
-<p>其中的文字内容为图像下方显示信息，可留空白，图片名称对应使用图片的名称.后缀名。<br>使用例：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![仙贝](xianbei.gif)</span><br></pre></td></tr></table></figure>
-<p><img src="/2021/02/02/Hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/xianbei.gif" alt="仙贝"></p>
-<p>文章转自：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/f72aaad7b852%EF%BC%8C">https://www.jianshu.com/p/f72aaad7b852，</a><br>感谢大佬分享</p>
+                <p>前段时间，因为Vultr跑路（说不上跑路，实际上就是我的机房被墙了），导致我之前在上面顺便部署的东西全部木大！虽然后来又重新部署到了我的阿里云里，但是不得不说重新部署一遍真的是非常麻烦。于是乎，我就打算将部署在服务器中的部分程序，打包一下方便之后使用。但是毕竟我是Linux苦手，在网上找打包命令的时候，基本上全部的命令，我都看不懂（，真不是我蠢啊，那东西一堆就网上乱扔，一点格式都没有，我能咋办嘛。于是我就写了这篇，也是为了以后忘记这玩意咋用可以直接到这里翻吧。</p>
+<h3 id="压缩、解压的方式"><a href="#压缩、解压的方式" class="headerlink" title="压缩、解压的方式"></a>压缩、解压的方式</h3><p>众所周知，Linux提供的压缩方法其实也挺多的，常见的zip格式，以及在linux系统中泛用性特别强的tar格式，以及cpio格式，接下来我就对每一种格式的打包方法进行讲述</p>
+<p><b>一、cpio</b><br>    cpio的打包有多种情况，一种是含子目录打包、一种是不含子目录打包，以及特定文件打包，说实话，这个东西我觉得可能会第一二种就行，如果是第三种直接用Xftp拖出来不就好/dog，不过既然讲出来了，那我就给描述一下吧！</p>
+<div class="panel panel-info">
+    <div class="panel-title">含子目录打包</div>
+    <div class="panel-body">
+        <p>本命令为将某个目录下的所有子目录打包并将这个.cpio压缩包放在某个目录下，使用方法：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find ... -<span class="built_in">print</span>|cpio -o &gt; .../文件名.cpio</span><br></pre></td></tr></table></figure>
+<p>其中，<span style="color:red">find</span>后为需要的文件目录，例如<span style="color:red">/root/xxx</span>,意思就是root目录下名为xxx的文件夹，<span style="color:red"> -print|cpio -o &gt; </span> 为使用的方法为该目录下的全部文件，之后为将文件输出在某个地方，列入<span style="color:red">/root/xxx.cpio</span>，这段代码就是将/root/xxx目录下的全部子文件及文件夹打包到/root目录下的xxx.cpio包中，完整代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find /root/xxx -<span class="built_in">print</span>|cpio -o &gt; /root/xxx.cpio</span><br></pre></td></tr></table></figure>
+<p>输入指令后等待打包完成，打包完成后会输出被打包文件的大小（单位b）</p>
 
+    </div>
+    </div>
+
+<div class="panel panel-info">
+    <div class="panel-title">不含子目录打包</div>
+    <div class="panel-body">
+        <p>本命令为将某个目录下的所有文件进行打包，打包不包含子目录，使用方法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls ... -print|cpio -o &gt; ...&#x2F;文件名.cpio</span><br></pre></td></tr></table></figure>
+<p>与包含子目录打包不同的是，这条命令是将<span style="color:red">find</span>更改为了<span style="color:blue">ls</span>，把“找”的方法更换成了“列出”的方法，以确保只将这个目录下的文件“列”出来，从而达到只打包某个文件夹的下文件的目的</p>
+
+    </div>
+    </div>
+
+<div class="panel panel-info">
+    <div class="panel-title">特定文件打包</div>
+    <div class="panel-body">
+        <p>有这个方法，但是介绍起来太长，而且也不好用，所以<br><span style="color:white;background:black;font-size:50px;font-family:仿宋;">我懒得写</span><br>其实是我看了半天教程，但是那个教程不够白话我的脑子看不懂，所以就此作罢。感兴趣的可以自己去百度搜素然后回来教我!</p>
+
+    </div>
+    </div>
+<p><b>解包</b><br>这里的话讲一种比较容易理解的解包方法：<br>代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr</span><br><span class="line">cpio -id&lt; /root/xxx.cpio</span><br></pre></td></tr></table></figure>
+<p>首先<span style="color:red">cd</span>到需要解包的路径usr，然后使用<span style="color:red">cpio -id&lt; /root/xxx.cpio </span>方法，方法参数为将<span style="color:red">/root</span>目录下的<span style="color:red">xxx.cpio</span>文件解压到usr文件夹。如果将中间的<b>cpio -id</b>中增加<b><span style="color:red">u</span></b>选项，如<b>cpio -iud</b>，则文件存在将会被覆盖，即强制覆盖。</p>
+<HR style="FILTER:alpha(opacity=100,finishopacity=0,style=2)" width="100%" color="#00FFFF" size="5">
+
+
+<p><b>二、tar</b><br>相对于上一个方法，tar方法我自认为应该是用的人比较多的，不过居然网上连一片白话文介绍都没有，很恐怖。那么我就暂且对这个方法编写一下吧。</p>
+<div class="panel panel-info">
+    <div class="panel-title">目录下的文件打包</div>
+    <div class="panel-body">
+        <p>将某个目录下的文件和子目录下的文件进行打包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tar -cvf /存放目录/xxx.tar /文件夹目录</span><br><span class="line">示例：</span><br><span class="line">tar -cvf /usr/xxx.tar /usr/lib</span><br></pre></td></tr></table></figure>
+<p>以示例的代码来说，<span style="color:red">tar -cvf</span>为压缩的固定句式，<span style="color:blue ">/usr</span>为保存目录，<span style="color: green">xxx.tar</span>为被保存文件名。空格后的路径<span style="color: pink">/usr/lib</span>为被打包的目录。<br>整段代码含义为：将<span style="color: pink">/usr/lib</span>目录下的文件以及子目录文件全部打包至<span style="color:blue ">/usr</span>目录下的<span style="color: green">xxx.tar</span>压缩包内。</p>
+
+    </div>
+    </div>
+
+<div class="panel panel-info">
+    <div class="panel-title">解包</div>
+    <div class="panel-body">
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tar -xvf 压缩包路径</span><br><span class="line">示例：</span><br><span class="line">tar -xcf /usr/xxx.tar</span><br><span class="line">tar -xcf xxx.tar</span><br></pre></td></tr></table></figure>
+<p>在<span style="color: red">tar -xcf</span>后写上被解压文件的绝对路径或相对路径，将这个压缩包内的文件解压至当前文件夹。</p>
+
+    </div>
+    </div>
+
+
+<h3 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h3><p>其实在进行打包后，还有压缩、解压命令，但是这个我暂时用不到。毕竟使用Linux过程中，我也就进行打包下载，没有必要再进行解压。所以如果想进一步扩展可以搜索相关的信息。<br>本篇文章参考：<a target="_blank" rel="noopener" href="http://blog.itpub.net/14710393/viewspace-754420/">linux下目录打包的方法</a><br>喜欢的话可以去看一下原博客，虽然看起来肯定比我这个吃力有点，不过废话可能没有那么多，其实可以把这些废话当做一种风格，毕竟私人博客的话我觉得在编写时也掺杂一部分个人感情也没问题对吧。</p>
+</HR>
             </div>
             
                 <div class="kratos-copyright text-center clearfix">
@@ -223,7 +269,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2021/02/02/Hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/",
+                text: "http://example.com/2021/03/16/Linux%E4%B8%AD%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E6%96%B9%E6%B3%95/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -235,11 +281,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2021/02/02/Hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/";
-            const title         = "「Hexo中插入图片」";
-            const excerpt       = `1、在项目的根目录下载图像插入插件：
-1npm install hexo-asset-image --save
-2、打开hexo的配置文件_config.yml，找到post_asset_folder，把选项从false改成true3...`;
+            const hostUrl       = "http://example.com/2021/03/16/Linux%E4%B8%AD%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E6%96%B9%E6%B3%95/";
+            const title         = "「Linux打包文件夹的方法」";
+            const excerpt       = `前段时间，因为Vultr跑路（说不上跑路，实际上就是我的机房被墙了），导致我之前在上面顺便部署的东西全部木大！虽然后来又重新部署到了我的阿里云里，但是不得不说重新部署一遍真的是非常麻烦。于是乎，我就打算将部署在服务器中的部分程序，打包...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -258,10 +302,10 @@
                 <div class="footer-tag clearfix">
                     <div class="pull-left">
                     <i class="fa fa-tags"></i>
-                        <a class="tag-none-link" href="/tags/hexo/" rel="tag">hexo</a>, <a class="tag-none-link" href="/tags/%E7%BC%96%E7%A0%81/" rel="tag">编码</a>
+                        <a class="tag-none-link" href="/tags/Linux/" rel="tag">Linux</a>, <a class="tag-none-link" href="/tags/%E5%91%BD%E4%BB%A4/" rel="tag">命令</a>
                     </div>
                     <div class="pull-date">
-                    <span>最后编辑：2021-02-02</span>
+                    <span>最后编辑：2021-04-09</span>
                     </div>
                 </div>
             </footer>
@@ -270,13 +314,9 @@
             <nav class="navigation post-navigation clearfix" role="navigation">
                 
                 <div class="nav-previous clearfix">
-                    <a title=" The new world" href="/2021/02/02/The-new-world/">&lt; 上一篇</a>
+                    <a title=" Hexo中插入图片" href="/2021/02/02/Hexo中插入图片/">&lt; 上一篇</a>
                 </div>
                 
-                
-                <div class="nav-next clearfix">
-                    <a title=" Linux打包文件夹的方法" href="/2021/03/16/Linux中打包文件夹的方法/">下一篇 &gt;</a>
-                </div>
                 
             </nav>
         

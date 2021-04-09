@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-02T10:09:51.053Z</updated>
+  <updated>2021-04-09T07:39:55.467Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux打包文件夹的方法</title>
+    <link href="http://example.com/2021/03/16/Linux%E4%B8%AD%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://example.com/2021/03/16/Linux%E4%B8%AD%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E6%96%B9%E6%B3%95/</id>
+    <published>2021-03-15T16:00:00.000Z</published>
+    <updated>2021-04-09T07:39:55.467Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;前段时间，因为Vultr跑路（说不上跑路，实际上就是我的机房被墙了），导致我之前在上面顺便部署的东西全部木大！虽然后来又重新部署到了我的阿里云里，但是不得不说重新部署一遍真的是非常麻烦。于是乎，我就打算将部署在服务器中的部分程序，打包一下方便之后使用。但是毕竟我是Linux</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+    <category term="命令" scheme="http://example.com/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo中插入图片</title>
@@ -47,7 +72,7 @@
     <link href="http://example.com/2021/02/02/The-new-world/"/>
     <id>http://example.com/2021/02/02/The-new-world/</id>
     <published>2021-02-02T03:36:47.000Z</published>
-    <updated>2021-02-02T10:09:51.142Z</updated>
+    <updated>2021-04-09T07:40:02.434Z</updated>
     
     
     <summary type="html">&lt;p&gt;完成了，正如本文标题一样，这是当前涉世未深的我第一次进行尝试制作个人博客。虽在尝试之处有万分感慨，但在结束之后，也随即化为欣喜，再随后就索然无味。我自认为已经擎山峰之巅，但是回首望，在最初尝试进行搭建时，也碰壁多次。不由得心生感慨，碌碌为人，我的人生何尝也不是碰壁蹴就，但是我们还是需要在碰壁时直面自己，虽然我有一个极大的性格缺陷“懒惰”，在碰壁时因为这个问题，或许就会很容易的轻言放弃，为此我也在漫漫的人生长路上，吃亏多次，当然我亦无悔改之意。既然没有悔改的打算，那就如此就好。&lt;br&gt;话虽如此，本博客的主要意图就是记录生活，以及整理自己的一些琐事。避免错误再返二遍，有些事情在进行第二次时可以顺利完成，这就是我的初衷。好了好了，还有一个缺点就是说东西的时候白文太多，不过毕竟是个人博客，怎么样都好啦。&lt;br&gt;其实博客搭建好久之前就已经结束了，但是因为近期工作比较忙，所有没有时间对这个博客进行维护。今天终于可以有时间，我会对这个博客的基本编写方法进行展示，以便后续编写时可以使用响应模块的编写代码。&lt;/p&gt;</summary>
